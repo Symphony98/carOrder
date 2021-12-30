@@ -1,0 +1,60 @@
+<view id="login">
+    <navigation>
+        <view class="headerBar">
+            <text>小程序名称</text>
+        </view>
+    </navigation>
+    <image src="/static/imgs/login_bg.png" mode="scaleToFill"></image>
+    <view class="contentBox">
+        <view class="logo"></view>
+        <view class="formBox">
+            <van-row>
+                <van-col span="8">
+                    <text>选择港口</text>
+                </van-col>
+                <van-col span="16">
+                    <van-dropdown-menu custom-class="dropdown" overlay="{{false}}">
+                        <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" popup-style="popup" />
+                    </van-dropdown-menu>
+                </van-col>
+            </van-row>
+            <van-row>
+                <van-col span="8">
+                    <text>+86 ></text>
+                </van-col>
+                <van-col span="16">
+                    <van-cell-group input-class="input">
+                        <van-field value="{{ value }}" placeholder="请输入手机号码" border="{{ true }}" />
+                    </van-cell-group>
+                </van-col>
+            </van-row>
+            <van-row>
+                <van-col span="8">
+                    <text>验证码</text>
+                </van-col>
+                <van-col span="16">
+                    <van-cell-group input-class="input">
+                        <van-field value="{{ value }}" placeholder="请输入验证码" border="{{ true }}" />
+                    </van-cell-group>
+                </van-col>
+            </van-row>
+            <van-row>
+                <van-col span="8">
+                    <text>选择角色</text>
+                </van-col>
+                <van-col span="16">
+                    <van-dropdown-menu custom-class="dropdown" overlay="{{false}}">
+                        <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+                    </van-dropdown-menu>
+                </van-col>
+            </van-row>
+            <van-button type="info" custom-class="primaryBtn">确认登录</van-button>
+            <van-button type="default" custom-class="default">立即注册</van-button>
+        </view>
+    </view>
+    <view class="bottom">
+        <text bindtap="click">其他方式</text>
+        <text>|</text>
+        <text>忘记密码</text>
+    </view>
+</view>

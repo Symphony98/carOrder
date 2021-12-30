@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "navigation": "/components/header/index",
+        "submit-page": "./../submitPage/index",
+        "order-result": "./../orderResult/index"
+    }
+}

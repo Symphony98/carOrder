@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "navigation": "/components/header/index",
+    "ship-order": "/pages/myPage/shipOrder/index",
+    "ship-evaluate": "/pages/myPage/shipEvaluate/index"
+  }
+}

@@ -1,0 +1,248 @@
+<view class="myEvaluate" wx:if="{{myShow}}" style="margin-top: {{navBarHeight}}px;">
+    <navigation bg-color="#446FE7">
+        <view class="headerBar">
+            <van-icon name="arrow-left" color="white" custom-class="leftIcon" bindtap="goBack" />
+            <text>综合质量评价</text>
+        </view>
+    </navigation>
+
+    <view class="shipMsg">
+        <image src="/static/imgs/bg-head.png"></image>
+        <view class="main">
+            <view class="first">
+                <text>东方红一号 1212111142</text>
+                <view>
+                    <image src="/static/imgs/bg-order.png"></image>
+                    <text>海轮</text>
+                </view>
+            </view>
+            <view class="second">停靠泊位：132号泊位</view>
+            <view class="second">所属公司：东方红一号有限公司</view>
+            <view class="thirdBox">
+                <view class="third">
+                    <van-icon name="phone-o" />
+                    <text>13122512561</text>
+                </view>
+                <view class="third">
+                    <van-icon name="envelop-o" />
+                    <text>dongfang@163.com</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="evaluate">
+        <van-divider contentPosition="center" customStyle="color: #999999; border-color: #BBBBBB; font-size: 24rpx;">本次服务进行评价</van-divider>
+        <!-- <van-steps steps="{{ steps }}" active="{{ active }}" /> -->
+
+        <view class="evaluateMain">
+            <view class="headTxt">
+                <b class="vertical"></b>
+                <text>靠（离）泊服务</text>
+            </view>
+
+            <view class="evaluateCon">
+                <view class="evaluateConRow">
+                    <view class="evaluateConRowText">1.靠（离）泊计划执行</view>
+                    <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal">
+                        <van-radio name="1">不满意</van-radio>
+                        <van-radio name="2">比较满意</van-radio>
+                        <van-radio name="3">满意</van-radio>
+                    </van-radio-group>
+                </view>
+                <view class="evaluateConRow">
+                    <view class="evaluateConRowText">2.拖轮协助靠离</view>
+                    <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal">
+                        <van-radio name="1">不满意</van-radio>
+                        <van-radio name="2">比较满意</van-radio>
+                        <van-radio name="3">满意</van-radio>
+                    </van-radio-group>
+                </view>
+            </view>
+        </view>
+        <view class="evaluateMain">
+            <view class="headTxt">
+                <b class="vertical"></b>
+                <text>装卸效率</text>
+            </view>
+
+            <view class="evaluateCon">
+                <view class="evaluateConRow">
+                    <view class="evaluateConRowText">3.作业计划执行</view>
+                    <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal">
+                        <van-radio name="1">不满意</van-radio>
+                        <van-radio name="2">比较满意</van-radio>
+                        <van-radio name="3">满意</van-radio>
+                    </van-radio-group>
+                </view>
+                <view class="evaluateConRow">
+                    <view class="evaluateConRowText">4.船舶靠好后首开工时间</view>
+                    <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal">
+                        <van-radio name="1">不满意</van-radio>
+                        <van-radio name="2">比较满意</van-radio>
+                        <van-radio name="3">满意</van-radio>
+                    </van-radio-group>
+                </view>
+                <view class="evaluateConRow">
+                    <view class="evaluateConRowText">5.交接班过程开收工点</view>
+                    <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal">
+                        <van-radio name="1">不满意</van-radio>
+                        <van-radio name="2">比较满意</van-radio>
+                        <van-radio name="3">满意</van-radio>
+                    </van-radio-group>
+                </view>
+                <view class="evaluateConRow">
+                    <view class="evaluateConRowText">6.昼夜效率</view>
+                    <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal">
+                        <van-radio name="1">不满意</van-radio>
+                        <van-radio name="2">比较满意</van-radio>
+                        <van-radio name="3">满意</van-radio>
+                    </van-radio-group>
+                </view>
+            </view>
+        </view>
+        <view class="evaluateMain">
+            <view class="headTxt">
+                <b class="vertical"></b>
+                <text>作业过程控制</text>
+            </view>
+
+            <view class="evaluateCon">
+                <view class="evaluateConRow">
+                    <view class="evaluateConRowText">7.作业方案沟通</view>
+                    <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal">
+                        <van-radio name="1">不满意</van-radio>
+                        <van-radio name="2">比较满意</van-radio>
+                        <van-radio name="3">满意</van-radio>
+                    </van-radio-group>
+                </view>
+                <view class="evaluateConRow">
+                    <view class="evaluateConRowText">8.作业规范执行</view>
+                    <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal">
+                        <van-radio name="1">不满意</van-radio>
+                        <van-radio name="2">比较满意</van-radio>
+                        <van-radio name="3">满意</van-radio>
+                    </van-radio-group>
+                </view>
+                <view class="evaluateConRow">
+                    <view class="evaluateConRowText">9.清舱等辅助作业</view>
+                    <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal">
+                        <van-radio name="1">不满意</van-radio>
+                        <van-radio name="2">比较满意</van-radio>
+                        <van-radio name="3">满意</van-radio>
+                    </van-radio-group>
+                </view>
+                <view class="evaluateConRow">
+                    <view class="evaluateConRowText">10.安全措施</view>
+                    <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal">
+                        <van-radio name="1">不满意</van-radio>
+                        <van-radio name="2">比较满意</van-radio>
+                        <van-radio name="3">满意</van-radio>
+                    </van-radio-group>
+                </view>
+                <view class="evaluateConRow">
+                    <view class="evaluateConRowText">11.质量措施</view>
+                    <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal">
+                        <van-radio name="1">不满意</van-radio>
+                        <van-radio name="2">比较满意</van-radio>
+                        <van-radio name="3">满意</van-radio>
+                    </van-radio-group>
+                </view>
+                <view class="evaluateConRow">
+                    <view class="evaluateConRowText">12.意见.建议处理及反馈</view>
+                    <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal">
+                        <van-radio name="1">不满意</van-radio>
+                        <van-radio name="2">比较满意</van-radio>
+                        <van-radio name="3">满意</van-radio>
+                    </van-radio-group>
+                </view>
+                <view class="evaluateConRow">
+                    <view class="evaluateConRowText">13.通关.通检手续办理</view>
+                    <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal">
+                        <van-radio name="1">不满意</van-radio>
+                        <van-radio name="2">比较满意</van-radio>
+                        <van-radio name="3">满意</van-radio>
+                    </van-radio-group>
+                </view>
+            </view>
+        </view>
+        <view class="evaluateMain">
+            <view class="headTxt">
+                <b class="vertical"></b>
+                <text>其他</text>
+            </view>
+
+            <view class="evaluateCon">
+                <view class="evaluateConRow">
+                    <view class="evaluateConRowText">14.单船指导员</view>
+                    <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal">
+                        <van-radio name="1">不满意</van-radio>
+                        <van-radio name="2">比较满意</van-radio>
+                        <van-radio name="3">满意</van-radio>
+                    </van-radio-group>
+                </view>
+                <view class="evaluateConRow">
+                    <view class="evaluateConRowText">15.理货人员</view>
+                    <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal">
+                        <van-radio name="1">不满意</van-radio>
+                        <van-radio name="2">比较满意</van-radio>
+                        <van-radio name="3">满意</van-radio>
+                    </van-radio-group>
+                </view>
+                <view class="evaluateConRow">
+                    <view class="evaluateConRowText">16.品牌经理</view>
+                    <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal">
+                        <van-radio name="1">不满意</van-radio>
+                        <van-radio name="2">比较满意</van-radio>
+                        <van-radio name="3">满意</van-radio>
+                    </van-radio-group>
+                </view>
+                <view class="evaluateConRow">
+                    <view class="evaluateConRowText">17.其他相关人员</view>
+                    <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal">
+                        <van-radio name="1">不满意</van-radio>
+                        <van-radio name="2">比较满意</van-radio>
+                        <van-radio name="3">满意</van-radio>
+                    </van-radio-group>
+                </view>
+            </view>
+            <van-cell-group>
+                <van-field model:value="{{ value }}" placeholder="说说您对本次服务的意见或建议" border="{{ true }}" type="textarea" autosize="{{ {maxHeight: 150, minHeight: 100} }}" input-class="textarea">
+                </van-field>
+            </van-cell-group>
+
+            <view class="imageList">
+                <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
+            </view>
+        </view>
+        <view class="userMsg">
+            <view class="userMsgCon" wx:if="{{!checked}}">
+                <view class="userName">联系人</view>
+                <van-field value="{{ value }}" placeholder="请留下您的名字" border="{{ true }}" bind:change="onChange" input-class="input" />
+                <view class="userName">联系电话</view>
+                <van-field value="{{ value }}" placeholder="请留下您的联系电话" border="{{ true }}" bind:change="onChange" input-class="input" />
+            </view>
+            <van-checkbox value="{{ checked }}" bind:change="checkChange" custom-class="checkBox">{{checkMsg}}</van-checkbox>
+        </view>
+        <van-button type="info" custom-class="infoBtn" bind:click="showPopup">确定提交</van-button>
+    </view>
+
+    <van-popup show="{{ popup }}" custom-class="popupClass">
+        <view style="margin:91rpx 0 10rpx 0;height: 38rpx;font-size: 28rpx;line-height: 38rpx;color: #000000;">确认提交此次服务评价吗？</view>
+        <view style="margin:0 0 40rpx 0;height: 32rpx;font-size: 25rpx;line-height: 32rpx;color: #B6B6B6;">请根据真实情况填写哦~</view>
+        <van-button custom-class="popupBtn" bind:click="hidePopup">取消</van-button>
+        <van-button type="info" custom-class="popupInfoBtn" bind:click="success">确定</van-button>
+    </van-popup>
+    <van-popup show="{{ popup2 }}" custom-class="popup2Class">
+        <view style="width: 571rpx;height: 627rpx;background: #FFFFFF;">
+            <image src="/static/imgs/img-success.png"></image>
+            <view style="margin:91rpx 0 10rpx 0;height: 38rpx;font-size: 28rpx;line-height: 38rpx;color: #000000;">提交成功</view>
+            <view style="margin:0 0 40rpx 0;height: 32rpx;font-size: 25rpx;line-height: 32rpx;color: #B6B6B6;">恭喜您已提交成功，可查看服务评价</view>
+            <van-button type="info" custom-class="popupInfoBtn">查看评价</van-button>
+        </view>
+        <view>
+            <image src="/static/imgs/icon-close.png" class="close" bindtap="hidePopup"></image>
+        </view>
+    </van-popup>
+    <view style="height: {{navBarHeight}}px;"></view>
+</view>

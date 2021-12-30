@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "navigation": "/components/header/index",
+    "write-order": "/pages/orderPage/writeOrder/index"
+  }
+}

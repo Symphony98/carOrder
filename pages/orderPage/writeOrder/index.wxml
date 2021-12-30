@@ -1,0 +1,85 @@
+<view class="writeOrder" wx:if="{{ show }}" style="margin-top: {{navBarHeight}}px;">
+    <navigation bg-color="#446FE7">
+        <view class="headerBar">
+            <van-icon name="arrow-left" color="white" custom-class="leftIcon" bindtap="goBack" />
+            <text>集港（车进）预约</text>
+        </view>
+    </navigation>
+    <view class="stepBar">
+        <van-steps steps="{{ steps }}" active="{{ active }}" active-color="#527DE1" custom-class="steps" />
+    </view>
+    <view class="writeMain" wx:if="{{active == 0}}">
+        <view class="tips">尊敬的用户您好，您正在填写<text style="color: #4B6EDA;font-weight: blod;">集港（车进）预约</text>，请您核实后进行提交，感谢您的理解与支持！</view>
+        <view class="subjectBox" wx:if="{{oneShow}}">
+            <view class="headTxt">
+                <b class="vertical"></b>
+                <text style="font-size: 28rpx;font-weight: bold;">基础信息（必填）</text>
+            </view>
+            <view class="subject">
+                <view class="title">1.填写车号</view>
+                <van-field model:value="{{ val1 }}" placeholder="请输入" input-class="input" error-message="{{err1}}" />
+                <view class="title">2.填写车队</view>
+                <van-field model:value="{{ val2 }}" placeholder="请输入" input-class="input" error-message="{{err2}}" />
+                <view class="title">3.预计进港时间</view>
+                <van-field model:value="{{ val3 }}" placeholder="请输入" input-class="input" error-message="{{err3}}" />
+                <view class="title">4.车辆联系电话</view>
+                <van-field model:value="{{ val4 }}" placeholder="请输入" input-class="input" error-message="{{err4}}" />
+                <view class="title">5.收货人</view>
+                <van-field model:value="{{ val5 }}" placeholder="请输入" input-class="input" error-message="{{err5}}" />
+                <view class="title">6.收货人联系电话</view>
+                <van-field model:value="{{ val6 }}" placeholder="请输入" input-class="input" error-message="{{err6}}" />
+                <view class="title">7.港口</view>
+                <van-field model:value="{{ val7 }}" placeholder="请输入" input-class="input" error-message="{{err7}}" />
+                <view class="title">8.码头</view>
+                <van-field model:value="{{ val8 }}" placeholder="请输入" input-class="input" error-message="{{err8}}" />
+                <view class="title">9.货物名称</view>
+                <van-field model:value="{{ val9 }}" placeholder="请输入" input-class="input" error-message="{{err9}}" />
+                <view class="title">10.货物种类</view>
+                <van-field model:value="{{ val10 }}" placeholder="请输入" input-class="input" error-message="{{err10}}" />
+                <view class="title">11.作业方式</view>
+                <van-field model:value="{{ val11 }}" placeholder="请输入" input-class="input" error-message="{{err11}}" />
+            </view>
+        </view>
+        <view class="subjectBox" wx:else>
+            <view class="headTxt">
+                <b class="vertical"></b>
+                <text style="font-size: 28rpx;font-weight: bold;">其他信息（选填）</text>
+            </view>
+            <view class="subject">
+                <view class="title">12.包装方式</view>
+                <van-field value="{{ val12 }}" placeholder="请输入" input-class="input" />
+                <view class="title">13.规格</view>
+                <van-field value="{{ val13 }}" placeholder="请输入" input-class="input" />
+                <view class="title">14.件数</view>
+                <van-field value="{{ val14 }}" placeholder="请输入" input-class="input" />
+                <view class="title">15.重量</view>
+                <van-field value="{{ val15 }}" placeholder="请输入" input-class="input" />
+                <view class="title">16.体积</view>
+                <van-field value="{{ val16 }}" placeholder="请输入" input-class="input" />
+                <view class="title">17.产地</view>
+                <van-field value="{{ val17 }}" placeholder="请输入" input-class="input" />
+                <view class="title">18.备注</view>
+                <van-field value="{{ val18 }}" placeholder="请输入" input-class="textarea" type="textarea" autosize="{{ {maxHeight: 150, minHeight: 100} }}" />
+            </view>
+        </view>
+        <view class=" btnBox">
+            <van-button custom-class="bottombtn">重置</van-button>
+            <van-button type="info" custom-class="bottomBtn">保存</van-button>
+            <van-button type="info" custom-class="bottomBtn" bindtap="nextPage">{{ oneShow ? "下一页":"提交"}}</van-button>
+        </view>
+    </view>
+    <submit-page wx:if="{{active == 1}}" bind:handleConfirm="submitConfirm"></submit-page>
+    <order-result wx:if="{{active == 3}}"></order-result>
+    <van-popup show="{{ popup }}" custom-class="popup2Class">
+        <view style="width: 571rpx;height: 627rpx;background: #FFFFFF;">
+            <image src="/static/imgs/img-success.png" class="image"></image>
+            <view class="text1">提交成功</view>
+            <view class="text2">恭喜您已提交成功，可随时查看预约进度</view>
+            <van-button type="info" custom-class="popupInfoBtn">查看预约</van-button>
+        </view>
+        <view style="padding-top: 50rpx;">
+            <image src="/static/imgs/icon-close.png" class="close" bindtap="hidePopup"></image>
+        </view>
+    </van-popup>
+    <view style="height: {{navBarHeight}}px;"></view>
+</view>

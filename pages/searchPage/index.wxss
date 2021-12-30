@@ -1,0 +1,181 @@
+#searchPage {
+    height: 100%;
+    background-color: #f1f1f1;
+}
+
+#searchPage .headerBar {
+    color: #ffffff;
+    text-align: center;
+    font-size: 32rpx;
+}
+
+#searchPage .searchBar {
+    display: flex;
+    overflow: hidden;
+    height: 104rpx;
+    background: #446FE7;
+}
+
+#searchPage .searchBar .left {
+    margin: 36rpx 20rpx;
+    width: 177rpx;
+    height: 32rpx;
+    font-size: 24rpx;
+    color: #ffffff;
+}
+
+#searchPage .searchBar .left .triangle {
+    margin-left: 10rpx;
+    font-size: 4rpx;
+    border-style: solid;
+    border-width: 8rpx 8rpx 0 8rpx;
+    border-color: #ffffff transparent transparent transparent;
+    width: 0px;
+    height: 0px;
+}
+#searchPage .searchBar .left .triangleF {
+    vertical-align: text-top;
+    margin-left: 10rpx;
+    font-size: 12rpx;
+    border-style: solid;
+    border-width: 0 8rpx 8rpx 8rpx;
+    border-color: transparent transparent #ffffff transparent;
+    width: 0px;
+    height: 0px;
+}
+
+#searchPage .searchBar .right {
+    flex: 1;
+}
+
+/* 车辆进出选择框 */
+#searchPage .searchBar .select {
+    position: absolute;
+    top: 260rpx;
+    left: 10rpx;
+    z-index: 9000;
+    width: 265rpx;
+    height: 158rpx;
+    background: #FFFFFF;
+    box-shadow: 0px 4rpx 6rpx rgba(0, 0, 0, 0.16);
+    border-radius: 10rpx;
+}
+
+#searchPage .searchBar .select .content {    
+    margin: 33rpx 0 0 27rpx;
+    width: 211rpx;
+    height: 92rpx;
+    font-size: 24rpx;
+}
+
+#searchPage .searchBar .select .content .box {
+    padding-bottom: 28rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 筛选栏  */
+#searchPage .dropdownItem {
+    margin-bottom: 20rpx;
+}
+
+#searchPage .dropdownItem .input {
+    width: 250rpx;
+}
+
+/* 筛选栏 第二个 */
+#searchPage .dropdownItem .timePick {
+    display: flex;
+    margin: 0 0 24rpx 46rpx;
+    border-bottom: 1rpx solid #e6e6e6;
+}
+
+/* 中间的月份筛选按钮 */
+#searchPage .dropdownItem .screen {
+    margin-bottom: 32rpx;
+}
+
+#searchPage .dropdownItem .screen .flexBox {
+    margin: 12rpx 45rpx;
+}
+
+#searchPage .dropdownItem .screen .flexBox .screenBtn {
+    padding: 0;
+    font-size: 24rpx;
+    width: 200rpx;
+    height: 64rpx;
+    background: #F6F8F9;
+    border-radius: 4rpx;
+}
+
+#searchPage .dropdownItem .screen .flexBox .btnActive {
+    padding: 0;
+    font-size: 24rpx;
+    width: 200rpx;
+    height: 64rpx;
+    background: #F2F5F7;
+    border: 2rpx solid #446FE7;
+    border-radius: 4rpx;
+    color: #446FE7;
+}
+
+/* 底部按钮 */
+#searchPage .dropdownItem .footer .defaultBtn {
+    border-radius: 0;
+    width: 322rpx;
+    height: 65rpx;
+    background: #FFFFFF;
+    border: 1rpx solid #707070;
+}
+
+/* 筛选栏 第三个 */
+#searchPage .dropdownItem .portSearch {
+    display: flex;
+    margin: 20rpx 0 30rpx 47rpx;
+    line-height: 90rpx;
+    border-bottom: 1rpx solid #E5E5E5;
+}
+
+#searchPage .dropdownItem .portSearch text {
+    font-size: 24rpx;
+    font-weight: bold;
+    color: #333333;
+}
+
+#searchPage .dropdownItem .portSearch .portSearchInput {
+    font-size: 24rpx;
+}
+
+#searchPage .dropdownItem .portSearchBox {
+    margin: 0 0 20rpx 47rpx;
+}
+
+#searchPage .dropdownItem .portSearchBox .portSearchItem {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 70rpx;
+    font-size: 24rpx;
+    font-weight: 500;
+    line-height: 58rpx;
+    color: #999999;
+}
+
+/* 筛选栏 第三个end */
+#searchPage .dropdownItem .portSearchBox .active {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 70rpx;
+    font-size: 24rpx;
+    font-weight: 500;
+    line-height: 58rpx;
+    color: #446FE7;
+}
+
+/* 底部按钮 */
+#searchPage .dropdownItem .footer .infoBtn {
+    border-radius: 0;
+    width: 428rpx;
+    height: 65rpx;
+    background: #527DE1;
+    border: 1rpx solid #527DE1;
+}

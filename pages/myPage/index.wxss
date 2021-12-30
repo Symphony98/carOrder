@@ -1,0 +1,118 @@
+#myPage {
+    height: 100%;
+    background: #F1F1F1;
+}
+
+/* 标题 */
+#myPage .headerBar {
+    text-align: center;
+    font-size: 32rpx;
+    color: #ffffff;
+}
+
+#myPage .user {
+    width: 750rpx;
+    height: 176rpx;
+    display: flex;
+    background-color: #ffffff;
+}
+
+#myPage .user image {
+    margin: 17rpx 16rpx 0 25rpx;
+    width: 142rpx;
+    height: 142rpx;
+}
+
+#myPage .user .userRight {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+#myPage .user .userRight .userMsg {
+    display: flex;
+    flex-direction: column;
+}
+
+#myPage .user .userRight .userMsg .userName {
+    margin: 32rpx 0 16rpx 0;
+    font-size: 36rpx;
+    color: #000000;
+}
+
+#myPage .user .userRight .userMsg .userPro {
+    font-size: 26rpx;
+    color: #9B9B9B;
+}
+
+#myPage .main {
+    margin: 20rpx 0 20rpx 0;
+    width: 750rpx;
+    height: 410rpx;
+    background-color: #ffffff;
+}
+
+#myPage .main .order {
+    display: flex;
+}
+
+#myPage .main .order image {
+    width: 58rpx;
+    height: 58rpx;
+    margin: 20rpx 20rpx 20rpx 30rpx;
+}
+
+#myPage .main .order .mainTxt {
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    height: 98rpx;
+    line-height: 98rpx;
+    font-size: 28rpx;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+#myPage .main .evaluate {
+    display: flex;
+    margin-top: 18rpx;
+}
+
+#myPage .main .evaluate image {
+    width: 58rpx;
+    height: 58rpx;
+    margin: 20rpx 20rpx 20rpx 30rpx;
+}
+
+#myPage .main .evaluate .mainTxt {
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    height: 98rpx;
+    line-height: 98rpx;
+    font-size: 28rpx;
+}
+
+#myPage .setting {
+    display: flex;
+    width: 750rpx;
+    height: 88rpx;
+    background: #FFFFFF;
+}
+
+#myPage .setting image {
+    width: 58rpx;
+    height: 58rpx;
+    margin: 16rpx 20rpx 20rpx 30rpx;
+}
+
+#myPage .setting .mainTxt {
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    height: 88rpx;
+    line-height: 88rpx;
+    font-size: 28rpx;
+}

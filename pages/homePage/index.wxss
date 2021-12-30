@@ -1,0 +1,117 @@
+#homePage {
+    position: relative;
+}
+
+#homePage .headerBar {
+    text-align: center;
+    color: #ffffff;
+}
+
+#homePage .topImg {
+    width: 750rpx;
+}
+
+#homePage .field-index--van-field {
+    position: absolute;
+    top: 208rpx;
+    left: 28rpx;
+    width: 696rpx;
+    height: 64rpx;
+    background: #FFFFFF;
+    border-radius: 48rpx;
+}
+
+#homePage .search {
+    border: none;
+}
+
+#homePage .btnBar {
+    position: relative;
+    width: 750rpx;
+    height: 325rpx;
+    background: #FFFFFF;
+    opacity: 1;
+    border-radius: 28rpx 28rpx 0 0;
+    position: absolute;
+    top: 301rpx;
+}
+
+#homePage .btnBar image {
+    display: inline-block;
+    width: 325rpx;
+    height: 245rpx;
+}
+
+#homePage .btnBar .textMsg {
+    width: 280rpx;
+    position: absolute;
+    top: 112rpx;
+    left: 60rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+#homePage .btnBar .textTwoMsg {
+    width: 280rpx;
+    position: absolute;
+    top: 112rpx;
+    left: 414rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+#homePage .btnBar view:nth-child(1) image:nth-child(1) {
+    margin: 40rpx 26rpx 0 37rpx;
+}
+
+#homePage .banner {
+    position: absolute;
+    top: 646rpx;
+}
+
+#homePage .banner image {
+    width: 750rpx;
+    height: 180rpx;
+}
+
+#homePage .banner .bannerDec {
+    position: absolute;
+    top: 46rpx;
+    left: 100rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+#homePage .homeContainer {
+    position: absolute;
+    overflow: auto;
+    height: 612rpx;
+    top: 846rpx;
+    width: 750rpx;
+}
+
+#homePage .homeContainer .headTxt {
+    padding: 20rpx 0 0 24rpx;
+}
+
+#homePage .homeContainer .headTxt .vertical {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 24rpx 0 0;
+    width: 10rpx;
+    height: 43rpx;
+    background-color: #3c89e3;
+}
+
+#homePage .homeContainer .headTxt text {
+    font-size: 32rpx;
+    font-weight: bold;
+}
+
+#homePage .homeContainer .tabActive {
+    font-weight: bold;
+}
+
+#homePage .homeContainer .titleStyle {
+    color: red;
+}

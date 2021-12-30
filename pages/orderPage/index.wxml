@@ -1,0 +1,18 @@
+<view id="orderPage" style="margin-top: {{navBarHeight}}px;" wx:if="{{ !writeShow }}">
+    <navigation bg-color="#446FE7">
+        <view class="headerBar">
+            <text>预约</text>
+        </view>
+    </navigation>
+
+    <image src="/static/imgs/order-banner.png"></image>
+
+    <view class="btnBox">
+        <van-button type="info" custom-class="orderBtn" bindtap="openWrite">集港（车进）预约</van-button>
+        <van-button type="info" custom-class="orderBtn">疏港（车出）预约</van-button>
+        <van-button type="info" custom-class="orderBtn">预约情况查询</van-button>
+    </view>
+    <view style="height: {{navBarHeight}}px;"></view>
+</view>
+
+<write-order show="{{ writeShow }}" bind:handleClose="close"></write-order>

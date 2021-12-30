@@ -1,0 +1,83 @@
+<view wx:if="{{show && !myShow}}" class="shipOrder" style="margin-top: {{navBarHeight}}px;">
+    <navigation bg-color="#446FE7">
+        <view class="headerBar">
+            <van-icon name="arrow-left" color="white" custom-class="leftIcon" bindtap="goBack" />
+            <text>船舶预约</text>
+        </view>
+    </navigation>
+
+    <van-dropdown-menu custom-class="dropdownItem">
+        <van-dropdown-item id="shipName" title="{{ shipName }}">
+        </van-dropdown-item>
+        <van-dropdown-item id="time" title="{{ time }}" bind:close="closeDropdown">
+            <view class="timePick">
+                <van-field value="{{ value }}" readonly placeholder="选择日期" input-class="input" input-align="center" bindtap="inputFocus" />
+                <text style="line-height: 80rpx;">至</text>
+                <van-field value="{{ value }}" disabled placeholder="选择日期" input-class="input" input-align="center" />
+            </view>
+            <view class="screen">
+                <view class="flexBox">
+                    <van-button type="default" custom-class="screenBtn">不限</van-button>
+                    <van-button type="default" custom-class="screenBtn">近三天</van-button>
+                    <van-button type="default" custom-class="screenBtn">一周内</van-button>
+                </view>
+                <view class="flexBox">
+                    <van-button type="default" custom-class="screenBtn">一个月内</van-button>
+                    <van-button type="default" custom-class="screenBtn">三个月内</van-button>
+                    <van-button type="default" custom-class="screenBtn">六个月内</van-button>
+                </view>
+            </view>
+            <view class="footer">
+                <van-button custom-class="defaultBtn" bindtap="closeDropdown">取消</van-button>
+                <van-button type="info" custom-class="infoBtn">确认</van-button>
+            </view>
+            <van-datetime-picker type="date" wx:if="{{dateTime}}" value="{{ currentDate }}" bind:input="onInput" min-date="{{ minDate }}" formatter="{{ formatter }}" bind:cancel="cancel" />
+        </van-dropdown-item>
+        <van-dropdown-item id="port" title="{{ port }}">
+            <view class="portSearch">
+                <text>选择港口</text>
+                <van-field value="{{ value }}" placeholder="输入港口名称" input-class="portSearchInput"/>
+            </view>
+            <view class="portSearchBox" bindtap="fatherTap">
+                <view class="portSearchItem" data-id="{{item.id}}" wx:for="{{portList}}" wx:key="index" class="{{index == targetIndex ? 'active' : 'portSearchItem'}}">
+                    <text data-id="{{item.id}}">{{item.name}}</text>
+                    <van-icon name="success" color="#446FE7" wx:if="{{index == targetIndex}}" />
+                </view>
+            </view>
+            <view class="footer">
+                <van-button custom-class="defaultBtn" bindtap="closeDropdown">取消</van-button>
+                <van-button type="info" custom-class="infoBtn">确认</van-button>
+            </view>
+        </van-dropdown-item>
+        <van-dropdown-item id="trade" title="{{ trade }}">
+        </van-dropdown-item>
+    </van-dropdown-menu>
+
+    <view class="shipOrderCon" style="max-height: calc(100% - {{navBarHeight}}px);">
+        <view class="headTxt">
+            <b class="vertical"></b>
+            <text>船舶预约</text>
+        </view>
+        <view class="shipOrderList">
+            <view class="list">
+                <view class="topList">
+                    <image src="/static/imgs/icon-jg.png"></image>
+                    <text style="margin-left:17rpx;vertical-align: top;">船名：哈尔号轮船 21215</text>
+                </view>
+                <van-button type="info" custom-class="seeEvaluate" bindtap="toMyEvaluate">查看评价</van-button>
+            </view>
+            <view class="listDec">抵达港口：上海港 码头：上海港 预计到达时间：12-12-12</view>
+        </view>
+        <view class="shipOrderList">
+            <view class="list">
+                <view class="topList">
+                    <image src="/static/imgs/icon-sg.png"></image>
+                    <text style="margin-left:17rpx;vertical-align: top;">船名：哈尔号轮船 21215</text>
+                </view>
+                <van-button type="info" custom-class="evaluate">去评价</van-button>
+            </view>
+            <view class="listDec">抵达港口：上海港 码头：上海港 预计到达时间：12-12-12</view>
+        </view>
+    </view>
+</view>
+<my-evaluate myShow="{{myShow}}" bind:handleClose="close"></my-evaluate>

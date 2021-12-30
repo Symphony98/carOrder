@@ -1,0 +1,78 @@
+<view id="homePage">
+    <navigation>
+        <view class="headerBar">
+            <text>小程序名称</text>
+        </view>
+    </navigation>
+    <image src="/static/imgs/bg-head.png" mode="scaleToFill" class="topImg"></image>
+    <van-cell-group input-class="input">
+        <van-field value="{{ value }}" center clearable placeholder="请输入船名/货名/单号等信息" border="{{ true }}" use-button-slot>
+            <van-icon name="search" slot="right-icon" size="50rpx" color="#527DE1" />
+        </van-field>
+    </van-cell-group>
+    <view class="btnBar">
+        <view style="display: inline-block;">
+            <image src="/static/imgs/bg-order.png"></image>
+            <view class="textMsg">
+                <text style="font-size: 40rpx;color: #fff;text-align: center;">预约服务</text>
+                <text style="font-size: 20rpx;color: #fff;text-align: center;margin-top: 10rpx;">可进行集港、疏港车辆预约及预约查询和管理</text>
+            </view>
+        </view>
+        <view style="display: inline-block;">
+            <image src="/static/imgs/bg-query.png"></image>
+            <view class="textTwoMsg">
+                <text style="font-size: 40rpx;color: #fff;text-align: center;">车辆进出查询</text>
+                <text style="font-size: 20rpx;color: #fff;text-align: center;margin-top: 10rpx;">可查询车辆进出港口的信息查询</text>
+            </view>
+        </view>
+    </view>
+    <view class="banner">
+        <image src="/static/imgs/banner.png"></image>
+        <view class="bannerDec">
+            <text style="color: #fff;font-size: 36rpx;">港口服务</text>
+            <text style="color: rgba(255, 255, 255, .8);font-size: 24rpx;font-weight: 300; letter-spacing: 4rpx;">让港口更智慧更美好</text>
+        </view>
+    </view>
+    <view class="homeContainer">
+        <view class="headTxt">
+            <b class="vertical"></b>
+            <text>我的预约</text>
+        </view>
+        <van-tabs active="{{ active }}" title-inactive-color="#BBBBBB" title-active-color="#333333" tab-active-class="tabActive" color="#527DE1" duration="0">
+            <van-tab title="全部预约">
+                <view class="orderTabBox">
+                    <view class="container">
+                        <view class="yuyueMsg">
+                            <image src="/static/imgs/icon-sg.png"></image>
+                            <text class="shipName">船名：哈尔号轮船 21215</text>
+                            <text class="statusTwo">已审核</text>
+                            <view class="detail">抵达港口：上海港 码头：上海港 预计到达时间：12-12-12</view>
+                        </view>
+                        <van-icon name="arrow" custom-class="rightIcon" />
+                    </view>
+                    <view class="container">
+                        <view class="yuyueMsg">
+                            <image src="/static/imgs/icon-sg.png"></image>
+                            <text class="shipName">船名：哈尔号轮船 21215</text>
+                            <text class="status">待审核</text>
+                            <view class="detail">抵达港口：上海港 码头：上海港 预计到达时间：12-12-12</view>
+                        </view>
+                        <van-icon name="arrow" custom-class="rightIcon" />
+                    </view>
+                    <view class="container">
+                        <view class="yuyueMsg">
+                            <image src="/static/imgs/icon-sg.png"></image>
+                            <text class="shipName">船名：哈尔号轮船 21215</text>
+                            <text class="statusThree">已审核</text>
+                            <view class="detail">抵达港口：上海港 码头：上海港 预计到达时间：12-12-12</view>
+                        </view>
+                        <van-icon name="arrow" custom-class="rightIcon" />
+                    </view>
+                </view>
+            </van-tab>
+            <van-tab title="待提交">内容 2</van-tab>
+            <van-tab title="待审核">内容 3</van-tab>
+            <van-tab title="已完成">内容 4</van-tab>
+        </van-tabs>
+    </view>
+</view>

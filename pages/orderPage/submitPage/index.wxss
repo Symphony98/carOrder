@@ -1,0 +1,89 @@
+.submitPage {
+    background: #ffffff;
+    overflow: auto;
+}
+
+/* 主体 */
+.submitPage .writeMain {
+    background-color: #ffffff;
+}
+
+.submitPage .writeMain .tips {
+    padding: 30rpx 30rpx 0 30rpx;
+    font-size: 26rpx;
+    line-height: 40rpx;
+    color: #999999;
+}
+
+/* 答题部分 */
+.submitPage .writeMain .subjectBox {
+    margin-top: 40rpx;
+}
+
+.submitPage .writeMain .subjectBox .headTxt {
+    padding-left: 20rpx;
+}
+
+.submitPage .writeMain .subjectBox .headTxt .vertical {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 24rpx 0 0;
+    width: 10rpx;
+    height: 40rpx;
+    background-color: #3c89e3;
+}
+
+/* 题目内容区 */
+.submitPage .writeMain .subjectBox .subject {
+    padding: 0 45rpx;
+}
+
+.submitPage .writeMain .subjectBox .subject .row {
+    border-bottom: 1rpx solid #D4D6D8;
+    padding: 35rpx 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.submitPage .writeMain .subjectBox .subject .title {
+    height: 37rpx;
+    font-size: 28rpx;
+    font-weight: 500;
+    color: #101010;
+}
+
+.submitPage .writeMain .subjectBox .subject .content {
+    height: 37rpx;
+    font-size: 28rpx;
+    font-weight: 400;
+    color: #989898;
+}
+
+
+/* 底部按钮 */
+.submitPage .writeMain .btnBox {
+    text-align: center;
+    margin: 20rpx 0 20rpx 0;
+}
+
+.submitPage .writeMain .btnBox .bottombtn {
+    width: 200rpx;
+    height: 65rpx;
+    margin-right: 20rpx;
+    background: #FFFFFF;
+    border: 1rpx solid #666666;
+    border-radius: 4rpx;
+    font-size: 28rpx;
+    line-height: 56rpx;
+    color: #333333;
+}
+
+.submitPage .writeMain .btnBox .bottomBtn {
+    width: 200rpx;
+    height: 65rpx;
+    background: #4B6EDA;
+    border-radius: 4rpx;
+    font-size: 28rpx;
+    line-height: 56rpx;
+    color: #FFFFFF;
+}

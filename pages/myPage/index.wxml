@@ -1,0 +1,58 @@
+<view id="myPage" style="margin-top: {{navBarHeight}}px;" wx:if="{{!show && !evaShow}}">
+    <navigation bg-color="#446FE7">
+        <view class="headerBar">
+            <text>我的</text>
+        </view>
+    </navigation>
+    <view class="user">
+        <image src="/static/imgs/bg-head.png"></image>
+        <view class="userRight">
+            <view class="userMsg">
+                <text class="userName">小红花</text>
+                <text class="userPro">南京港 车队队长</text>
+            </view>
+            <van-icon name="arrow" custom-class="rightIcon" />
+        </view>
+    </view>
+
+    <view class="main">
+        <view class="order">
+            <image src="/static/imgs/icon-carIn.png"></image>
+            <view class="mainTxt">
+                <text>集港（车进）预约</text>
+                <van-icon name="arrow" custom-class="rightIcon" />
+            </view>
+        </view>
+        <view class="order">
+            <image src="/static/imgs/icon-carOut.png"></image>
+            <view class="mainTxt">
+                <text>疏港（车出）预约</text>
+                <van-icon name="arrow" custom-class="rightIcon" />
+            </view>
+        </view>
+        <view class="order" bindtap="toShipOrder">
+            <image src="/static/imgs/icon-shipOrder.png"></image>
+            <view class="mainTxt">
+                <text>船舶预约</text>
+                <van-icon name="arrow" custom-class="rightIcon" />
+            </view>
+        </view>
+        <view class="evaluate" bindtap="toShipEvaluate">
+            <image src="/static/imgs/icon-pinjia.png"></image>
+            <view class="mainTxt">
+                <text>船舶评价</text>
+                <van-icon name="arrow" custom-class="rightIcon" />
+            </view>
+        </view>
+    </view>
+
+    <view class="setting">
+        <image src="/static/imgs/icon-set.png"></image>
+        <view class="mainTxt">
+            <text>设置</text>
+            <van-icon name="arrow" custom-class="rightIcon" />
+        </view>
+    </view>
+</view>
+<ship-order show="{{show}}" bind:handleClose="close"></ship-order>
+<ship-evaluate evaShow="{{evaShow}}" bind:handleClose="close"></ship-evaluate>

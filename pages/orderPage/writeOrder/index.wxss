@@ -1,0 +1,151 @@
+.writeOrder {
+    background: #F1F1F1;
+    height: 100%;
+    overflow: auto;
+}
+
+/* 标题 */
+.writeOrder .headerBar {
+    text-align: center;
+    font-size: 32rpx;
+    color: #ffffff;
+}
+
+.writeOrder .headerBar .leftIcon {
+    position: absolute;
+    top: 18rpx;
+    left: 10rpx;
+}
+
+.writeOrder .stepBar {
+    overflow: hidden;
+    width: 751rpx;
+    height: 174rpx;
+    background: #FFFFFF;
+    margin-bottom: 25rpx;
+}
+
+.writeOrder .stepBar .steps {
+    margin: 20rpx auto;
+    width: 569rpx;
+    font-size: 40rpx;
+}
+
+/* 主体 */
+.writeOrder .writeMain {
+    background-color: #ffffff;
+    padding: 0 24rpx 24rpx 24rpx;
+}
+
+.writeOrder .writeMain .tips {
+    padding: 46rpx 75rpx 40rpx 48rpx;
+    font-size: 26rpx;
+    line-height: 41rpx;
+    color: #999999;
+}
+
+/* 答题部分 */
+.writeOrder .writeMain .subjectBox .headTxt .vertical {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 24rpx 0 0;
+    width: 10rpx;
+    height: 40rpx;
+    background-color: #3c89e3;
+}
+
+.writeOrder .writeMain .subjectBox .subject {
+    padding: 0 22rpx;
+}
+
+.writeOrder .writeMain .subjectBox .subject .title {
+    margin-top: 10rpx;
+}
+
+/* 输入框 */
+.writeOrder .writeMain .subjectBox .subject .input {
+    height: 74rpx;
+    border: 1px solid #5494DA;
+    padding: 0 32rpx;
+    border-radius: 10rpx;
+}
+
+.writeOrder .writeMain .subjectBox .subject .textarea {
+    border: 1px solid #5494DA;
+    border-radius: 10px;
+    padding: 20rpx 20rpx;
+}
+
+/* 底部按钮 */
+.writeOrder .writeMain .btnBox {
+    width: 640rpx;
+    margin: 20rpx auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.writeOrder .writeMain .btnBox .bottombtn {
+    width: 200rpx;
+    height: 65rpx;
+    background: #FFFFFF;
+    border: 1rpx solid #666666;
+    border-radius: 4rpx;
+    font-size: 28rpx;
+    line-height: 56rpx;
+    color: #333333;
+}
+
+.writeOrder .writeMain .btnBox .bottomBtn {
+    width: 200rpx;
+    height: 65rpx;
+    background: #4B6EDA;
+    border-radius: 4rpx;
+    font-size: 28rpx;
+    line-height: 56rpx;
+    color: #FFFFFF;
+}
+
+.writeOrder .popup2Class {
+    width: 571rpx;
+    height: 800rpx;
+    background: transparent;
+    border-radius: 12rpx;
+    text-align: center;
+}
+
+.writeOrder .popup2Class .text1 {
+    margin: 91rpx 0 10rpx 0;
+    height: 38rpx;
+    font-size: 28rpx;
+    line-height: 38rpx;
+    color: #000000;
+}
+
+.writeOrder .popup2Class .text2 {
+    margin: 0 0 40rpx 0;
+    height: 32rpx;
+    font-size: 25rpx;
+    line-height: 32rpx;
+    color: #B6B6B6;
+}
+
+.writeOrder .popup2Class .image {
+    margin: 76rpx 0 0 0;
+    width: 259rpx;
+    height: 197rpx;
+}
+
+.writeOrder .popup2Class .popupInfoBtn {
+    width: 443rpx;
+    height: 77rpx;
+    background: #4B6EDA;
+    border-radius: 10rpx;
+    font-size: 35rpx;
+    line-height: 28rpx;
+    color: #FFFFFF;
+}
+
+.writeOrder .popup2Class .close {
+    width: 72rpx;
+    height: 72rpx;
+}

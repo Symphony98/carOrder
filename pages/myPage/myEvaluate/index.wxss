@@ -1,0 +1,219 @@
+.myEvaluate {
+    overflow: auto;
+    height: 100%;
+    background: #F1F1F1;
+}
+
+/* 标题 */
+.myEvaluate .headerBar {
+    text-align: center;
+    font-size: 32rpx;
+    color: #ffffff;
+}
+
+.myEvaluate .headerBar .leftIcon {
+    position: absolute;
+    top: 18rpx;
+    left: 10rpx;
+}
+
+.myEvaluate .shipMsg {
+    display: flex;
+    margin: 24rpx 0 34rpx 24rpx;
+    width: 702rpx;
+    height: 258rpx;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20rpx;
+}
+
+.myEvaluate .shipMsg image {
+    margin: 35rpx 20rpx 0 19rpx;
+    width: 172rpx;
+    height: 130rpx;
+}
+
+.myEvaluate .shipMsg .main {
+    flex: 1;
+}
+
+.myEvaluate .shipMsg .main .first {
+    padding: 28rpx 24rpx 28rpx 0;
+    display: flex;
+    justify-content: space-between;
+    height: 37rpx;
+    line-height: 37rpx;
+    font-size: 28rpx;
+}
+
+.myEvaluate .shipMsg .main .first image {
+    margin: 0 16rpx 0 0;
+    width: 36rpx;
+    height: 26rpx;
+}
+
+.myEvaluate .shipMsg .main .second {
+    margin-bottom: 20rpx;
+    height: 32rpx;
+    font-size: 24rpx;
+    line-height: 21rpx;
+    color: #999999;
+}
+
+.myEvaluate .shipMsg .main .thirdBox {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20rpx;
+}
+
+.myEvaluate .shipMsg .main .thirdBox .third {
+    background: #F6F7F9;
+    padding: 0 8rpx;
+}
+
+.myEvaluate .shipMsg .main .thirdBox text {
+    margin-left: 4rpx;
+    height: 30rpx;
+    font-size: 22rpx;
+    line-height: 22rpx;
+    color: #BBBBBB;
+}
+
+.myEvaluate .evaluate {
+    width: 750rpx;
+}
+
+.myEvaluate .evaluate .evaluateMain {
+    margin: 40rpx 0;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+
+    border-radius: 10px;
+}
+
+/* 标题信息 */
+.myEvaluate .evaluate .evaluateMain .headTxt {
+    padding: 20rpx 0 0 24rpx;
+}
+
+.myEvaluate .evaluate .evaluateMain .headTxt .vertical {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 24rpx 0 0;
+    width: 10rpx;
+    height: 43rpx;
+    background-color: #3c89e3;
+}
+
+.myEvaluate .evaluate .evaluateMain .headTxt text {
+    font-size: 28rpx;
+    font-weight: bold;
+    color: #4F4F4F;
+}
+
+/* end */
+.myEvaluate .evaluate .evaluateMain .evaluateCon {
+    margin: 40rpx 0 0 29rpx;
+    width: 646rpx;
+}
+
+.myEvaluate .evaluate .evaluateMain .evaluateCon .evaluateConRow .evaluateConRowText {
+    height: 37rpx;
+    font-size: 28rpx;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    line-height: 56rpx;
+    color: #333333;
+}
+
+.myEvaluate .evaluate .evaluateMain .evaluateCon .evaluateConRow .van-radio-group {
+    display: flex;
+}
+
+.myEvaluate .evaluate .evaluateMain .textarea {
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+    padding: 20rpx 20rpx;
+}
+
+.myEvaluate .evaluate .evaluateMain .imageList {
+    padding: 0 40rpx;
+}
+
+.myEvaluate .evaluate .userMsg .userMsgCon {
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+.myEvaluate .evaluate .userMsg .userMsgCon .userName {
+    margin: 32rpx 0 0 23rpx;
+    height: 37rpx;
+    font-size: 28rpx;
+    line-height: 28rpx;
+    color: #333333;
+}
+
+.myEvaluate .evaluate .userMsg .userMsgCon .input {
+    padding: 0 0 0 10rpx;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+}
+
+.myEvaluate .evaluate .userMsg .checkBox {
+    margin: 20rpx;
+}
+
+.myEvaluate .evaluate .infoBtn {
+    margin: 0 0 70rpx 25rpx;
+    width: 701rpx;
+    height: 88rpx;
+    background: #4582EE;
+    box-shadow: 0px 3rpx 6rpx rgba(6, 0, 1, 0.1);
+
+    border-radius: 10rpx;
+}
+
+/* 弹窗1 */
+.myEvaluate .popupClass {
+    width: 571rpx;
+    height: 352rpx;
+    background: #FFFFFF;
+    border-radius: 12rpx;
+    text-align: center;
+}
+
+.myEvaluate .popupBtn {
+    margin-right: 28rpx;
+    width: 221rpx;
+    height: 60rpx;
+    background: #FFFFFF;
+    border: 1px solid #446FE7;
+    border-radius: 10rpx;
+}
+/* 弹窗公共button */
+.myEvaluate .popupInfoBtn {
+    width: 221rpx;
+    height: 60rpx;
+    background: #4B6EDA;
+    opacity: 1;
+    border-radius: 10rpx;
+}
+/* 弹窗2 */
+.myEvaluate .popup2Class {
+    width: 571rpx;
+    height: 800rpx;
+    background: transparent;
+    border-radius: 12rpx;
+    text-align: center;
+}
+
+.myEvaluate .popup2Class image {
+    margin: 76rpx 0 0 0;
+    width: 259rpx;
+    height: 197rpx;
+}
+
+.myEvaluate .popup2Class .close {
+    width: 72rpx;
+    height: 72rpx;
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "navigation": "/components/header/index"
+  },
+  "navigationBarTitleText": "小程序名称",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#4C84CC"
+}

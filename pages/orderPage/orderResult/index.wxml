@@ -1,0 +1,76 @@
+<view class="submitPage">
+    <view class="writeMain">
+        <view class="tips">尊敬的用户，您的预约结果为<text style="color: red;">不通过</text>，<text style="color:#4B6EDA">查看原因</text>。</view>
+        <view class="tips">尊敬的用户，您的预约结果为<text style="color: green;">已通过</text>，可以进行作业。</view>
+        <view class="subjectBox">
+            <view class="headTxt">
+                <b class="vertical"></b>
+                <text style="font-size: 28rpx;font-weight: bold;">基础信息（必填）</text>
+            </view>
+            <view class="subject">
+                <view class="row">
+                    <view class="title">填写车号</view>
+                    <view class="content">苏A21212</view>
+                </view>
+                <view class="row">
+                    <view class="title">填写车队</view>
+                    <view class="content">东方红车队</view>
+                </view>
+                <view class="row">
+                    <view class="title">预计进港时间</view>
+                    <view class="content">2021-12-12 13：11：11</view>
+                </view>
+                <view class="row">
+                    <view class="title">车辆联系电话</view>
+                    <view class="content">135123151</view>
+                </view>
+                <view class="row">
+                    <view class="title">收货人</view>
+                    <view class="content">小明</view>
+                </view>
+                <view class="row">
+                    <view class="title">收货人联系电话</view>
+                    <view class="content">135132151</view>
+                </view>
+                <view class="row">
+                    <view class="title">港口</view>
+                    <view class="content">南京港</view>
+                </view>
+                <view class="row">
+                    <view class="title">码头</view>
+                    <view class="content">龙潭码头</view>
+                </view>
+                <view class="row">
+                    <view class="title">货物名称</view>
+                    <view class="content">黄沙</view>
+                </view>
+                <view class="row">
+                    <view class="title">货物种类</view>
+                    <view class="content">黄沙</view>
+                </view>
+                <view class="row">
+                    <view class="title">作业方式</view>
+                    <view class="content">卸货</view>
+                </view>
+            </view>
+        </view>
+        <view class="subjectBox">
+            <view class="headTxt">
+                <b class="vertical"></b>
+                <text style="font-size: 28rpx;font-weight: bold;">其他信息（选填）</text>
+            </view>
+            <view class="subject">
+                <view class="row" style="border-bottom: 0;">
+                    <view class="title">无</view>
+                </view>
+            </view>
+
+            <!-- <image src="/static/imgs/fail.png" class="fail"></image> -->
+            <image src="/static/imgs/passed.png" class="fail"></image>
+        </view>
+        <view class="btnBox">
+            <van-button custom-class="bottombtn">返回</van-button>
+            <van-button type="info" custom-class="bottomBtn">确认</van-button>
+        </view>
+    </view>
+</view>

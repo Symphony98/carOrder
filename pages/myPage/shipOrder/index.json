@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "navigation": "/components/header/index",
+        "my-evaluate": "/pages/myPage/myEvaluate/index"
+    }
+}

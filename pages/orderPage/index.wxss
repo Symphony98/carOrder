@@ -1,0 +1,28 @@
+#orderPage .headerBar {
+    text-align: center;
+    font-size: 32rpx;
+    color: #ffffff;
+}
+
+#orderPage image {
+    width: 760rpx;
+    height: 429rpx;
+}
+
+#orderPage .btnBox {
+    margin-top: 130rpx;
+    width: 100%;
+    text-align: center;
+}
+
+#orderPage .orderBtn {
+    margin-top: 36rpx;
+    width: 620rpx;
+    height: 88rpx;
+    background: linear-gradient(180deg, #4B6EDA 0%, #3462F6 1%, #4582EE 61%, #68ACF8 100%);
+    box-shadow: 0px 8rpx 18rpx rgba(4, 112, 245, 0.36);
+    border-radius: 10rpx;
+    font-size: 32rpx;
+    line-height: 180rpx;
+    color: #FFFFFF;
+}

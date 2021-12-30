@@ -1,0 +1,285 @@
+<view class="evaluatePage">
+    <view class="title">南京港集团铜精矿作业综合质量评价调查</view>
+    <view class="line">日期</view>
+    <van-row>
+        <van-col span="12">船名</van-col>
+        <van-col span="12">客户</van-col>
+    </van-row>
+    <van-row>
+        <van-col span="12">停靠时间</van-col>
+        <van-col span="12">停靠泊位</van-col>
+    </van-row>
+    <van-row>
+        <van-col span="12">电话</van-col>
+        <van-col span="12">E-mail</van-col>
+    </van-row>
+    <scroll-view style="height: 940rpx;padding:10rpx 0;" scroll-y='true' bindscroll="onPageScroll" scroll-into-view='{{storeDetail}}'>
+        <view class="page-section" id="{{item.id}}" wx:for="{{radioList}}" wx:key="id">
+            <view class="page-section-title">{{item.label}}</view>
+            <view class="radioList">
+                <van-radio-group data-id="{{item.id}}" value="{{ item.radio }}" bind:change="radioChange">
+                    <van-radio name="1">满意</van-radio>
+                    <van-radio name="2">比较满意</van-radio>
+                    <van-radio name="3">不满意</van-radio>
+                </van-radio-group>
+            </view>
+        </view>
+        <!-- <view class="page-section" id="b">
+            <view class="page-section-title">2.拖轮协助靠离</view>
+            <view class="radioList">
+                <radio-group bindchange="radioChange">
+                    <view>
+                        <radio value="" checked="">满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">比较满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">不满意</radio>
+                    </view>
+                </radio-group>
+            </view>
+        </view>
+        <view class="page-section" id="c">
+            <view class="page-section-title">3.作业计划执行</view>
+            <view class="radioList">
+                <radio-group bindchange="radioChange">
+                    <view>
+                        <radio value="" checked="">满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">比较满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">不满意</radio>
+                    </view>
+                </radio-group>
+            </view>
+        </view>
+        <view class="page-section" id="d">
+            <view class="page-section-title">4.船舶靠好后首开工时间</view>
+            <view class="radioList">
+                <radio-group bindchange="radioChange">
+                    <view>
+                        <radio value="" checked="">满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">比较满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">不满意</radio>
+                    </view>
+                </radio-group>
+            </view>
+        </view>
+        <view class="page-section" id="e">
+            <view class="page-section-title">5.交接班过程开收工点</view>
+            <view class="radioList">
+                <radio-group bindchange="radioChange">
+                    <view>
+                        <radio value="" checked="">满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">比较满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">不满意</radio>
+                    </view>
+                </radio-group>
+            </view>
+        </view>
+        <view class="page-section" id="f">
+            <view class="page-section-title">6.昼夜效率</view>
+            <view class="radioList">
+                <radio-group bindchange="radioChange">
+                    <view>
+                        <radio value="" checked="">满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">比较满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">不满意</radio>
+                    </view>
+                </radio-group>
+            </view>
+        </view>
+        <view class="page-section" id="a">
+            <view class="page-section-title">7.作业方案沟通</view>
+            <view class="radioList">
+                <radio-group bindchange="radioChange">
+                    <view>
+                        <radio value="" checked="">满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">比较满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">不满意</radio>
+                    </view>
+                </radio-group>
+            </view>
+        </view>
+        <view class="page-section" id="b">
+            <view class="page-section-title">8.作业规范执行</view>
+            <view class="radioList">
+                <radio-group bindchange="radioChange">
+                    <view>
+                        <radio value="" checked="">满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">比较满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">不满意</radio>
+                    </view>
+                </radio-group>
+            </view>
+        </view>
+        <view class="page-section" id="c">
+            <view class="page-section-title">9.清舱等辅助作业</view>
+            <view class="radioList">
+                <radio-group bindchange="radioChange">
+                    <view>
+                        <radio value="" checked="">满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">比较满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">不满意</radio>
+                    </view>
+                </radio-group>
+            </view>
+        </view>
+        <view class="page-section" id="d">
+            <view class="page-section-title">10.安全措施</view>
+            <view class="radioList">
+                <radio-group bindchange="radioChange">
+                    <view>
+                        <radio value="" checked="">满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">比较满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">不满意</radio>
+                    </view>
+                </radio-group>
+            </view>
+        </view>
+        <view class="page-section" id="e">
+            <view class="page-section-title">11.质量措施</view>
+            <view class="radioList">
+                <radio-group bindchange="radioChange">
+                    <view>
+                        <radio value="" checked="">满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">比较满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">不满意</radio>
+                    </view>
+                </radio-group>
+            </view>
+        </view>
+        <view class="page-section" id="f">
+            <view class="page-section-title">12.意见、建议处理及反馈</view>
+            <view class="radioList">
+                <radio-group bindchange="radioChange">
+                    <view>
+                        <radio value="" checked="">满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">比较满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">不满意</radio>
+                    </view>
+                </radio-group>
+            </view>
+        </view>
+        <view class="page-section" id="f">
+            <view class="page-section-title">13.通关、通检手续办理馈</view>
+            <view class="radioList">
+                <radio-group bindchange="radioChange">
+                    <view>
+                        <radio value="" checked="">满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">比较满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">不满意</radio>
+                    </view>
+                </radio-group>
+            </view>
+        </view>
+        <view class="page-section" id="f">
+            <view class="page-section-title">14.单船指导员</view>
+            <view class="radioList">
+                <radio-group bindchange="radioChange">
+                    <view>
+                        <radio value="" checked="">满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">比较满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">不满意</radio>
+                    </view>
+                </radio-group>
+            </view>
+        </view>
+        <view class="page-section" id="f">
+            <view class="page-section-title">15.理货人员</view>
+            <view class="radioList">
+                <radio-group bindchange="radioChange">
+                    <view>
+                        <radio value="" checked="">满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">比较满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">不满意</radio>
+                    </view>
+                </radio-group>
+            </view>
+        </view>
+        <view class="page-section" id="f">
+            <view class="page-section-title">16.品牌经理</view>
+            <view class="radioList">
+                <radio-group bindchange="radioChange">
+                    <view>
+                        <radio value="" checked="">满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">比较满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">不满意</radio>
+                    </view>
+                </radio-group>
+            </view>
+        </view>
+        <view class="page-section" id="f">
+            <view class="page-section-title">17.其他相关人员</view>
+            <view class="radioList">
+                <radio-group bindchange="radioChange">
+                    <view>
+                        <radio value="" checked="">满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">比较满意</radio>
+                    </view>
+                    <view>
+                        <radio value="" checked="">不满意</radio>
+                    </view>
+                </radio-group>
+            </view>
+        </view> -->
+    </scroll-view>
+    <button type="primary" bindtap="enterTap">提交</button>
+</view>

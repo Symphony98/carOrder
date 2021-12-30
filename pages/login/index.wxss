@@ -1,0 +1,97 @@
+#login {
+    /* bfc */
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+}
+#login .headerBar {
+    text-align: center;
+    font-size: 32rpx;
+    color: #fff;
+}
+
+#login image {
+    position: absolute;
+    width: 750rpx;
+    height: 100%;
+}
+
+#login .contentBox {
+    /* bfc */
+    overflow: hidden;
+    width: 631rpx;
+    height: 804rpx;
+    margin: 261rpx 0 0 59rpx;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 12rpx;
+    opacity: 0.96;
+}
+
+#login .contentBox .logo {
+    position: absolute;
+    top: 203rpx;
+    left: 292rpx;
+    width: 167rpx;
+    height: 167rpx;
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+
+#login .contentBox .formBox {
+    margin: 126rpx 0 0 43rpx;
+    width: 546rpx;
+    height: 625rpx;
+    /* border: 1px solid red; */
+}
+
+.contentBox .formBox .van-row {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.contentBox .formBox van-row text {
+    font-size: 32rpx;
+    line-height: 90rpx;
+    margin: 28rpx 30rpx 30rpx 20rpx;
+}
+
+.contentBox .formBox van-row .dropdown {
+    box-shadow: none;
+}
+
+.contentBox .formBox van-row .van-dropdown-item {
+    left: 200rpx;
+    width: 400rpx;
+}
+
+.contentBox .formBox .primaryBtn {
+    margin: 25rpx 0;
+    width: 560rpx;
+    height: 94rpx;
+    background: linear-gradient(180deg, #6B92FF 0%, #2F58AE 100%);
+    box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 8rpx;
+}
+
+.contentBox .formBox .default {
+    width: 560rpx;
+    height: 94rpx;
+    background: #FFFFFF;
+    border: 1px solid #4F77D9;
+    color: #557DE2;
+    opacity: 1;
+    border-radius: 8rpx;
+}
+
+.bottom {
+    position: relative;
+    z-index: 2000;
+    margin: 14rpx auto;
+    width: 272rpx;
+    height: 37rpx;
+    font-size: 28rpx;
+    font-weight: 400;
+    color: #999999;
+    display: flex;
+    justify-content: space-between;
+}

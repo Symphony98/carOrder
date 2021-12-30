@@ -1,0 +1,42 @@
+<view wx:if="{{evaShow}}" class="shipOrder" style="margin-top: {{navBarHeight}}px;">
+    <navigation bg-color="#446FE7">
+        <view class="headerBar">
+            <van-icon name="arrow-left" color="white" custom-class="leftIcon" bindtap="goBack" />
+            <text>船舶评价</text>
+        </view>
+    </navigation>
+
+    <view class="notFound">
+        <view class="notFoundTxt">404</view>
+        <image src="/static/imgs/bg-head"></image>
+        <view class="notFoundDec">您暂时没有对任何铜精矿作业业务进行评价，快来评价吧！</view>
+        <van-button type="info" custom-class="evaluateBtn">立即评价</van-button>
+    </view>
+
+    <view class="shipOrderCon" style="height: calc(calc(100% - 724rpx) - {{navBarHeight}}px);">
+        <view class="headTxt">
+            <b class="vertical"></b>
+            <text>船舶预约</text>
+        </view>
+        <view class="shipOrderList">
+            <view class="list">
+                <view class="topList">
+                    <image src="/static/imgs/icon-jg.png"></image>
+                    <text style="margin-left:17rpx;vertical-align: top;">船名：哈尔号轮船 21215</text>
+                </view>
+                <van-button type="info" custom-class="seeEvaluate">查看评价</van-button>
+            </view>
+            <view class="listDec">抵达港口：上海港 码头：上海港 预计到达时间：12-12-12</view>
+        </view>
+        <view class="shipOrderList">
+            <view class="list">
+                <view class="topList">
+                    <image src="/static/imgs/icon-sg.png"></image>
+                    <text style="margin-left:17rpx;vertical-align: top;">船名：哈尔号轮船 21215</text>
+                </view>
+                <van-button type="info" custom-class="evaluate">去评价</van-button>
+            </view>
+            <view class="listDec">抵达港口：上海港 码头：上海港 预计到达时间：12-12-12</view>
+        </view>
+    </view>
+</view>

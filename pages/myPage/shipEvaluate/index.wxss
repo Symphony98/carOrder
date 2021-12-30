@@ -1,0 +1,141 @@
+.shipOrder {
+    height: 100%;
+    background: #ffffff;
+}
+
+/* 标题 */
+.shipOrder .headerBar {
+    text-align: center;
+    font-size: 32rpx;
+    color: #ffffff;
+}
+
+/* 404 */
+.shipOrder .notFound {
+    overflow: hidden;
+    height: 724rpx;
+    width: 750rpx;
+    background: #F1F1F1;
+}
+
+/* 文字 */
+.shipOrder .notFound .notFoundTxt {
+    text-align: center;
+    margin-top: 84rpx;
+}
+
+/* 图片 */
+.shipOrder .notFound image {
+    margin-left: 146rpx;
+    width: 454rpx;
+    height: 357rpx;
+    background: #FFFFFF;
+}
+
+.shipOrder .notFound .notFoundDec {
+    text-align: center;
+    font-size: 22rpx;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #888888;
+}
+
+.shipOrder .notFound .evaluateBtn {
+    margin: 10rpx 0 0 65rpx;
+    width: 620rpx;
+    height: 88rpx;
+    background: linear-gradient(180deg, #4B6EDA 0%, #3462F6 1%, #4582EE 61%, #68ACF8 100%);
+    box-shadow: 0 8rpx 18rpx rgba(4, 112, 245, 0.36);
+    border-radius: 10rpx;
+}
+
+
+.shipOrder .headerBar .leftIcon {
+    position: absolute;
+    top: 18rpx;
+    left: 10rpx;
+}
+
+.shipOrder .shipOrderCon {
+    overflow: auto;
+    width: 750rpx;
+}
+
+.shipOrder .shipOrderCon .headTxt {
+    padding: 20rpx 0 0 24rpx;
+}
+
+.shipOrder .shipOrderCon .headTxt .vertical {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 24rpx 0 0;
+    width: 10rpx;
+    height: 43rpx;
+    background-color: #3c89e3;
+}
+
+.shipOrder .shipOrderCon .headTxt text {
+    font-size: 32rpx;
+    font-weight: bold;
+}
+
+/* 大box */
+.shipOrder .shipOrderCon .shipOrderList {
+    margin: 18rpx 0 0 30rpx;
+    padding-top: 30rpx;
+    width: calc(750rpx - 30rpx);
+    height: 142rpx;
+    background: #FFFFFF;
+    border-bottom: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 上半部 */
+.shipOrder .shipOrderCon .shipOrderList .list {
+    font-size: 28rpx;
+    color: #222222;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 集港，疏港图片 */
+.shipOrder .shipOrderCon .shipOrderList .list .topList image {
+    width: 48rpx;
+    height: 36rpx;
+}
+
+/* 查看评价按钮 */
+.shipOrder .shipOrderCon .shipOrderList .list .seeEvaluate {
+    padding: 0;
+    margin: 0 23rpx 17rpx 0;
+    width: 140rpx;
+    height: 48rpx;
+    background: #6197F7;
+    opacity: 1;
+    border-radius: 40rpx;
+    font-size: 24rpx;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+/* 去评价 */
+.shipOrder .shipOrderCon .shipOrderList .list .evaluate {
+    padding: 0;
+    margin: 0 23rpx 17rpx 0;
+    width: 140rpx;
+    height: 48rpx;
+    background: #527DE1;
+    opacity: 1;
+    border-radius: 40rpx;
+    font-size: 24rpx;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+/* 抵达港口 */
+.shipOrder .shipOrderCon .shipOrderList .listDec {
+    font-size: 24rpx;
+    color: #999999;
+}
